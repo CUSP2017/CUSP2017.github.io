@@ -3,6 +3,26 @@ html,body {
     font-size: $base-font-size;
 }
 
+body {
+    line-height: 1.58;
+    color: rgba(0,0,0,.8);
+}
+
+h1, h2, h3, h4 {
+    font-family: $head-font;
+}
+
+h1,h2 {
+    font-weight: bold;
+}
+
+h3 > a:hover {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin-top: 60px;
+}
 
 .col-md-9 {
     padding-left: 0;
@@ -11,15 +31,26 @@ html,body {
     border-radius: 0;
 }
 
+.post-title, .panel-title {
+    font-family: $head-font;
+    font-weight: bold;
+}
 .navbar-default {
-    border-color: transparent;
-    background-color: transparent;
+    background-color: #fafafa;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
 }
 
 .navbar-brand.header-logo {
-    padding: 15px 0px;
+    padding: 15px;
+    font-family: $head-font;
+    font-weight: bold;
+}
+
+.mySlides {
+    display: block; 
+    margin: 0 auto;
+    width:100%;
 }
 
 .row {
@@ -134,4 +165,9 @@ footer {
 
 .post-title {
     line-height: 2;
+}
+
+// button
+.btn-primary {
+    background-color: #551A8B;
 }
